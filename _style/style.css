@@ -1,0 +1,406 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    background: #1f1517;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Estilos do cabeçalho */
+header nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu li {
+    margin-right: 1rem;
+}
+
+/* Estilos do herói */
+.hero {
+    align-items: center;
+    background: #181012;
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+    padding: 0rem 2rem;
+    margin: auto;
+    overflow: clip;
+}
+
+.hero-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.rem;
+}
+
+.hero-subtitulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: #c7bab3;
+    font-weight: 400;
+}
+
+.hero-imagem-container {
+    max-width: 45%;
+    column-count: 4;
+}
+
+.hero-imagem-container figure img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* Estilos da seção "Sobre Nós" */
+.sobre-nos {
+    background-color: #1f1517;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.sobre-nos .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre-nos h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sobre-nos p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilos das caixas de receitas */
+.receita-boxes {
+    max-width: 1120px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+.receita-box ,h2 
+{   text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.receita-box {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.receita-box-titulo {
+    font-family: 'Epilogue', sans-serif;
+    color: #a45a49;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.receita-box-descricao ,p {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Estilos da seção de destaques */
+.destaques {
+    background-color: #1f1517;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.destaques .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.destaques h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.destaques-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.destaque {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    flex: 1;
+}
+
+.destaque h3 {
+    font-family: 'Epilogue', sans-serif;
+    color: #a45a49;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.destaque p {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Estilos da seção de depoimentos */
+.depoimentos {
+    background-color: #1f1517;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.depoimentos .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.depoimentos h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.depoimentos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.depoimento {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    flex: 1;
+}
+
+.depoimento p {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cliente {
+    font-style: italic;
+}
+
+/* Estilos da seção de newsletter */
+.newsletter {
+    background-color: #1f1517;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.newsletter .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newsletter h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    margin-top: 20px;
+}
+
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    background-color: #a45a49;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #823832;
+}
+
+
+/* Estilos da seção "Galeria de Imagens" */
+.galeria {
+    background-color:  #1f1517;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.galeria h2 {
+    margin-bottom: 20px;
+}
+
+.imagem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.imagem-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagem-grid img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #1f1517;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+footer .container {
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .contato h3,
+footer .redes-sociais h3 {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #a45a49;
+}
+
+footer .redes-sociais {
+    text-align: right;
+}
+
+footer .redes-sociais ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .redes-sociais ul li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+footer .redes-sociais ul li:first-child {
+    margin-left: 0;
+}
+
+footer .redes-sociais ul li a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+footer .redes-sociais ul li a img:hover {
+    transform: scale(1.2);
+}
+
+/* Media queries para telas menores */
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 1.5rem;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero-imagem-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .receita-boxes {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .receita-boxes {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+    }
+
+    .receita-box {
+        padding: 1rem;
+    }
+
+    .receita-box-titulo {
+        font-size: 1rem;
+    }
+
+    .receita-box-descricao {
+        font-size: 0.8rem;
+    }
+}
