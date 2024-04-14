@@ -60,7 +60,7 @@ header nav {
     gap: 6rem;
     padding: 0rem 2rem;
     margin: auto;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .hero-conteudo {
@@ -68,6 +68,7 @@ header nav {
     flex-direction: column;
     justify-content: center;
     gap: 1.rem;
+    text-align: center;
 }
 
 .hero-subtitulo {
@@ -121,16 +122,18 @@ header nav {
     gap: 2rem;
     padding: 2rem;
 }
-.receita-box ,h2 
-{   text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
+
 .receita-box {
+    text-align: center;
     background: #fff;
     padding: 1.5rem;
     border-radius: 0.5rem;
+}
+
+.receita-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .receita-box-titulo {
@@ -141,7 +144,7 @@ header nav {
     margin-bottom: 1rem;
 }
 
-.receita-box-descricao ,p {
+.receita-box-descricao {
     color: #888;
     font-size: 0.9rem;
 }
@@ -166,7 +169,8 @@ header nav {
 
 .destaques-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -175,6 +179,8 @@ header nav {
     padding: 1.5rem;
     border-radius: 0.5rem;
     flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
 }
 
 .destaque h3 {
@@ -209,7 +215,8 @@ header nav {
 
 .depoimentos-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -218,6 +225,8 @@ header nav {
     padding: 1.5rem;
     border-radius: 0.5rem;
     flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
 }
 
 .depoimento p {
@@ -276,10 +285,9 @@ header nav {
     background-color: #823832;
 }
 
-
 /* Estilos da seção "Galeria de Imagens" */
 .galeria {
-    background-color:  #1f1517;
+    background-color: #1f1517;
     padding: 50px 0;
     text-align: center;
 }
@@ -317,6 +325,7 @@ footer .container {
     max-width: 1120px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -359,6 +368,22 @@ footer .redes-sociais ul li a img:hover {
 }
 
 /* Media queries para telas menores */
+@media only screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .hero-conteudo {
+        text-align: center;
+    }
+
+    .hero-imagem-container {
+        max-width: 100%;
+        column-count: 1;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     nav {
         padding: 1.5rem;
@@ -372,35 +397,22 @@ footer .redes-sociais ul li a img:hover {
         padding: 3rem 1rem;
     }
 
-    .hero-imagem-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .receita-boxes {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         padding: 1rem;
+    }
+
+    .destaques-container {
+        flex-direction: column;
+    }
+
+    .destaque {
+        min-width: auto;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .hero-subtitulo {
         font-size: 1.2rem;
-    }
-
-    .receita-boxes {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 1rem;
-    }
-
-    .receita-box {
-        padding: 1rem;
-    }
-
-    .receita-box-titulo {
-        font-size: 1rem;
-    }
-
-    .receita-box-descricao {
-        font-size: 0.8rem;
     }
 }
